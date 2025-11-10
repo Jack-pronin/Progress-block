@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress block</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/adaptive.css">
+</head>
+<body>
+
+<section class="progress">
+    <div class="container">
+        <div class="progress__title">Progress</div>
+        <div class="progress__container">
+            <div id="progress__block">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+                    <circle cx="60" cy="60" r="55" stroke="#DAE6EC" stroke-width="10"/>
+                    <circle cx="60" cy="60" r="55" stroke="#005CFF" stroke-width="10"/>
+                </svg>
+            </div>
+
+            <div class="progress__controls">
+                <label class="label">
+                    <input type="text" id="value-input" class="value-input" min="0" max="100" value="60">
+                    Value
+                </label>
+
+                <label class="label toggle">
+                    <input type="checkbox" id="animate-toggle" class="checkbox-toggle">
+                    Animate
+                </label>
+
+                <label class="label toggle">
+                    <input type="checkbox" id="hide-toggle" class="checkbox-toggle">
+                    Hide
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="module" src="src/scripts/script.js"></script>
+
+</body>
+</html>
